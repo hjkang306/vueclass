@@ -14,4 +14,6 @@ npm install -g firebase-tools
 
 ## 배포하기
 
+## 1차 완성 : 컴퍼넌트 사용, props 사용, swiper 사용
+
 https://vueclass333.web.app
