@@ -2,12 +2,12 @@
   <section id="bannerType" class="banner__wrap" :class="fonts">
     <h2 class="blind">배너 영역</h2>
     <div class="banner__inner">
-      <h3 class="title">{{ titles[0].title }}</h3>
+      <h3 class="title">코딩 척척학사</h3>
       <p class="desc">
-        {{ titles[0].desc }}
-        <a :href="titles[0].link" :title="titles[0].alt">{{
-          titles[0].link
-        }}</a>
+        더 다양한 코딩 공부는 티스토리에 작성되어 있습니다.
+        <a href="https://hjkang306.tistory.com/" title="티스토리 페이지로 이동"
+          >https://hjkang306.tistory.com</a
+        >
       </p>
       <span class="small">배너 유형01</span>
     </div>
@@ -18,18 +18,6 @@
 export default {
   props: {
     fonts: String,
-  },
-  data: function () {
-    return {
-      titles: [
-        {
-          title: "코딩척척학사",
-          desc: "더 다양한 코딩 공부는 티스토리에 작성되어 있습니다.",
-          link: "https://hjkang306.tistory.com",
-          alt: "티스토리 페이지로 이동",
-        },
-      ],
-    };
   },
 };
 </script>
