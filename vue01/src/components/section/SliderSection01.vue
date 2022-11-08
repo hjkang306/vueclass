@@ -15,13 +15,41 @@
         class="mySwiper"
       >
         <swiper-slide
-          v-for="title in titles"
-          v-bind:key="title.title"
-          :class="title.title"
           ><div class="desc">
-            <span>{{ title.subTitle }}</span>
-            <h3>{{ title.title }}</h3>
-            <p>{{ title.desc }}</p>
+            <span>Journey</span>
+            <h3>The Blue Sea</h3>
+            <p>
+              보고 있으면 마음이 편안해지는 수평선과<br />
+              푸른 물결을 감상해 볼까요?
+            </p>
+            <div class="btn">
+              <a href="#">자세히 보기</a>
+              <a href="#" class="black">사이트 보기</a>
+            </div>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><div class="desc">
+            <span>Journey</span>
+            <h3>The Blue Sea</h3>
+            <p>
+              보고 있으면 마음이 편안해지는 수평선과<br />
+              푸른 물결을 감상해 볼까요?
+            </p>
+            <div class="btn">
+              <a href="#">자세히 보기</a>
+              <a href="#" class="black">사이트 보기</a>
+            </div>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><div class="desc">
+            <span>Journey</span>
+            <h3>The Blue Sea</h3>
+            <p>
+              보고 있으면 마음이 편안해지는 수평선과<br />
+              푸른 물결을 감상해 볼까요?
+            </p>
             <div class="btn">
               <a href="#">자세히 보기</a>
               <a href="#" class="black">사이트 보기</a>
@@ -51,27 +79,6 @@ export default {
   },
   props: {
     fonts: String,
-  },
-  data: function () {
-    return {
-      titles: [
-        {
-          subTitle: "Journey",
-          title: "The Blue Sea",
-          desc: "보고 있으면 마음이 편안해지는 수평선과 푸른 물결을 감상해 볼까요?",
-        },
-        {
-          subTitle: "Journey",
-          title: "The Blue Sea",
-          desc: "보고 있으면 마음이 편안해지는 수평선과 푸른 물결을 감상해 볼까요?",
-        },
-        {
-          subTitle: "Journey",
-          title: "The Blue Sea",
-          desc: "보고 있으면 마음이 편안해지는 수평선과 푸른 물결을 감상해 볼까요?",
-        },
-      ],
-    };
   },
 };
 </script>

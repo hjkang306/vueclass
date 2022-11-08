@@ -10,18 +10,19 @@
           됩니다.
         </p>
         <ul>
-          <li v-for="text in texts" v-bind:key="text">
-            <a href="#">{{ text }}</a>
-          </li>
+          <li><a href="#">가까이서 본 파도</a></li>
+          <li><a href="#">멀리서 본 파도</a></li>
+          <li><a href="#">가까이서 본 해변</a></li>
+          <li><a href="#">멀리서 본 해변</a></li>
+          <li><a href="#">물 속에서의 바다</a></li>
+          <li><a href="#">잔잔한 수평선</a></li>
         </ul>
       </div>
-      <div
-        class="imgText__img"
-        v-for="img in imgs"
-        v-bind:key="img.img"
-        :class="img.img"
-      >
-        <a href="#">{{ img.desc }}</a>
+      <div class="imgText__img img1">
+        <a href="#">근접 사진 보기</a>
+      </div>
+      <div class="imgText__img img2">
+        <a href="#" class="blue">원거리 사진 보기</a>
       </div>
     </div>
   </section>
@@ -32,34 +33,6 @@ export default {
   props: {
     attr: String,
     layout: String,
-  },
-  data: function () {
-    return {
-      titles: [
-        {
-          title: "가깝고도 먼 바다",
-          desc: "바다를 멀리서 볼 때와 가까이서 볼 때의 차이는 아주 색다른 경험이 됩니다.",
-        },
-      ],
-      texts: [
-        "가까이서 본 파도",
-        "멀리서 본 파도",
-        "가까이서 본 해변",
-        "멀리서 본 해변",
-        "물 속에서의 바다",
-        "잔잔한 수평선",
-      ],
-      imgs: [
-        {
-          img: "img1",
-          desc: "근접 사진 보기",
-        },
-        {
-          img: "img2",
-          desc: "원거리 사진 보기",
-        },
-      ],
-    };
   },
 };
 </script>
