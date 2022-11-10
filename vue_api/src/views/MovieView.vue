@@ -26,11 +26,12 @@
               }"
               :pagination="true"
               :modules="modules"
-              class="mySwiper"
+              className="mySwiper"
             >
-              <swiper-slide v-for="slider in sliders" :key="slider.id">
-                <div class="item">
+              <swiper-slide v-for="(slider, index) in sliders" :key="slider.id">
+                <div className="item">
                   <a :href="`https://www.themoviedb.org/movie/${slider.id}`">
+                    <div class="rank">{{ index + 1 }}</div>
                     <img
                       :src="`https://image.tmdb.org/t/p/w500/${slider.poster_path}`"
                       :alt="slider.title"
@@ -304,6 +305,9 @@ export default {
 //   padding: 25px !important;
 //   user-select: none;
 // }
+.swiper-coverflow {
+  overflow: hidden;
+}
 .swiper-pagination-bullet {
   background: rgba(0, 0, 0, 0.8) !important;
 }
@@ -313,5 +317,17 @@ export default {
 .swiper-slide {
   width: 30%;
   margin-bottom: 30px;
+}
+
+// rank
+.rank {
+  position: absolute;
+  font-size: 5vw;
+  color: var(--black);
+  top: -20px;
+  left: 40px;
+  transform: translateX(-50%);
+  -webkit-text-stroke: 2px var(--white);
+  -webkit-text-fill-color: var(--black);
 }
 </style>
