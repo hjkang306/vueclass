@@ -12,7 +12,7 @@
               :grabCursor="true"
               :centeredSlides="true"
               :slidesPerView="'auto'"
-              :initialSlide="5"
+              :initialSlide="1"
               :autoplay="{
                 delay: 2500,
                 disableOnInteraction: false,
