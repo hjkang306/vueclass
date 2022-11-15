@@ -2,6 +2,7 @@
   <div>
     <HeaderCont />
     <TitleCont name1="Movie" name2="Api" />
+
     <section>
       <div className="container">
         <h2>Popular Movies</h2>
@@ -44,6 +45,7 @@
         </div>
       </div>
     </section>
+    <!-- slider -->
 
     <div className="movie__search">
       <div className="container">

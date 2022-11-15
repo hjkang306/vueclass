@@ -98,7 +98,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     color: var(--black);
-    background: var(--black);
+    background: var(--bg-light);
     text-align: justify;
     transition: transform 0.3s;
 
