@@ -60,9 +60,7 @@ export default {
     const refers = ref([]);
 
     const reference = () => {
-      fetch(
-        "https://hjkang306.github.io/reactclass/react_api/src/utils/reference01.json"
-      )
+      fetch("https://hjkang306.github.io/react_api/src/utils/reference01.json")
         .then((response) => response.json())
         // .then((result) => console.log(result.cssRefer))
         .then((result) => (refers.value = result.cssRefer))
